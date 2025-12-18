@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-12-17)
+## Unreleased (2025-12-18)
 
 <section class="features">
 
@@ -16,12 +16,23 @@
 
 <!-- /.features -->
 
+<section class="bug-fixes">
+
+### Bug Fixes
+
+-   [`f83da1e`](https://github.com/stdlib-js/stdlib/commit/f83da1eb81f4beb34c5480ee188d2c3103bdc20c) - use interface rather than class definition
+
+</section>
+
+<!-- /.bug-fixes -->
+
 <section class="commits">
 
 ### Commits
 
 <details>
 
+-   [`f83da1e`](https://github.com/stdlib-js/stdlib/commit/f83da1eb81f4beb34c5480ee188d2c3103bdc20c) - **fix:** use interface rather than class definition _(by Athan Reines)_
 -   [`a33a861`](https://github.com/stdlib-js/stdlib/commit/a33a861d18e0877b8ddbea520efee0adc864b84d) - **feat:** add `complex/float64/base/assert/is-almost-same-value` _(by Athan Reines)_
 
 </details>
