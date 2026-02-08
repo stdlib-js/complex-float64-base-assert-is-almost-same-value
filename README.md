@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import isAlmostSameValue from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float64-base-assert-is-almost-same-value@deno/mod.js';
+import isAlmostSameValue from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float64-base-assert-is-almost-same-value@v0.1.1-deno/mod.js';
 ```
 
 #### isAlmostSameValue( z1, z2, maxULP )
@@ -127,7 +127,7 @@ out = isAlmostSameValue( z1, z2, 0 );
 ```javascript
 import EPS from 'https://cdn.jsdelivr.net/gh/stdlib-js/constants-float64-eps@deno/mod.js';
 import Complex128 from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float64-ctor@deno/mod.js';
-import isAlmostSameValue from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float64-base-assert-is-almost-same-value@deno/mod.js';
+import isAlmostSameValue from 'https://cdn.jsdelivr.net/gh/stdlib-js/complex-float64-base-assert-is-almost-same-value@v0.1.1-deno/mod.js';
 
 var z1 = new Complex128( 1.0, 3.0+EPS );
 var z2 = new Complex128( 1.0+EPS, 3.0 );
