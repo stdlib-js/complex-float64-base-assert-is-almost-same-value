@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2025 The Stdlib Authors.
@@ -16,30 +16,23 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 4.1
 
-// MODULES //
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@main/index.d.ts"/>
 
-var isAlmostSameValueF64 = require( '@stdlib/number-float64-base-assert-is-almost-same-value' );
-var reim = require( '@stdlib/complex-float64-reim' );
-
-
-// MAIN //
+import { Complex128 } from '@stdlib/types/complex';
 
 /**
 * Tests whether two double-precision complex floating-point numbers are approximately the same value within a specified number of ULPs (units in the last place).
 *
 * ## Notes
 *
-* -   The function implements the [SameValue Algorithm][ecma-262-same-value-algorithm], as specified in ECMAScript 5.
-* -   In contrast to the strict equality operator `===`, `-0` and `+0` are distinguishable and `NaNs` are the same.
+* -   The function differs from the `===` operator in that the function treats `-0` and `+0` as distinct and `NaNs` as the same.
 *
-* [ecma-262-same-value-algorithm]: http://ecma-international.org/ecma-262/5.1/#sec-9.12
-*
-* @param {Complex128} z1 - first complex number
-* @param {Complex128} z2 - second complex number
-* @param {number} maxULP - maximum allowed ULP difference
-* @returns {boolean} boolean indicating whether two double-precision complex floating-point numbers are approximately the same value within a specified number of ULPs
+* @param z1 - first complex number
+* @param z2 - second complex number
+* @param maxULP - maximum allowed ULP difference
+* @returns boolean indicating whether two double-precision complex floating-point numbers are approximately the same value within a specified number of ULPs
 *
 * @example
 * var EPS = require( '@stdlib/constants-float64-eps' );
@@ -54,16 +47,9 @@ var reim = require( '@stdlib/complex-float64-reim' );
 * bool = isAlmostSameValue( z1, z2, 1 );
 * // returns true
 */
-function isAlmostSameValue( z1, z2, maxULP ) {
-	var parts1 = reim( z1 );
-	var parts2 = reim( z2 );
-	return (
-		isAlmostSameValueF64( parts1[ 0 ], parts2[ 0 ], maxULP ) &&
-		isAlmostSameValueF64( parts1[ 1 ], parts2[ 1 ], maxULP )
-	);
-}
+declare function isAlmostSameValue( z1: Complex128, z2: Complex128, maxULP: number ): boolean;
 
 
 // EXPORTS //
 
-module.exports = isAlmostSameValue;
+export = isAlmostSameValue;
